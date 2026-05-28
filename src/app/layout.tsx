@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(dmSans.className, "h-full antialiased")}
+      className={cn(dmSans.className, "h-full scroll-smooth antialiased")}
       suppressHydrationWarning
     >
-      <body className="flex min-h-full flex-col">
+      <body className="relative min-h-full">
         <Providers>{children}</Providers>
       </body>
     </html>
